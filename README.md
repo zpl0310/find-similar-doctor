@@ -1,4 +1,4 @@
-I planed to do it in 2 hours but it actually took me 6 hours to finish.
+#
 
 Assumptions:
 a) I assumed that the patient is looking for a specific specialty of doctors. So that the recommendation is mainly based on specialty. 
