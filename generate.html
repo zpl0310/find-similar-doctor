@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+        const firstname=["Audrey","Alex","Filex","Smith","Paul","Johnson","Hill","Scott","Nuyat","Phoebe","Danial","Dan","Jennifer","Emma","Bethy",
+                        "Ben","John","Adams","Lee","Clementine","Harris","Martin","Scarlet","Nelson","Robinson","Margeret","Jane","Eilliet","Justin",
+                        "Aria","Aya","Fey","Allen","Miller","Marc","Valentina","Josephine","Johson","Kelly","Kenna","Clara","Phoebius","Garcia",
+                        "Preya","Joey","Monica","Ross","Chandelar","Shaka","Baudica","Darius","Linken","De Gaulle","Sheldon","Groudon","Shuikuni",
+                        "Hakone","Zhedong","Rajesh","Kohl","Corr","Sensa","Cersei","Jimmy","Jaime","Peter","Tyrion","Joffrey","Grey Warm","Eddard",
+                        "Rachel","Mike","Micheal"];
+        const lastname=["Will","Johnson","William","Miller","Beths","Johns","Davis","Snow","Rivers","Storm","Sand","Stark","Targaryan","Lannister",
+                        "Bing","Geller","Buffey","Roy","Green","Tribbiani","Clause","Kooper","Smith","Kuthropoly","Bieber","Li","Chu","Takashi","Yuan",
+                        "Ip","Wang","Tully","Arryn"];
+        const specialties=["Pediatrics","Family","Physician","Oncology","Obstetrics"];
+        const cities=["San Francisco","Sacramento","Cupertino","Mountain View","San Jose","Milpitas","Fremont"];
+
+        let doctors=[];
+
+        function generate_doctors() {
+            for(var i=0;i<200;i++){
+                let cur={};
+                cur["id"]=i;
+                cur["name"]=firstname[Math.random()*firstname.length|0]+" "+lastname[Math.random()*lastname.length|0]+" MD";
+                cur["address"]=""+(Math.random()*5000|0)+" Roland Curtis";
+                cur["specialty"]=specialties[Math.random()*specialties.length|0];
+                cur["phone"]="(123)-456-7890";
+                cur["city"]=cities[Math.random()*cities.length|0];
+                cur["zip_code"]="90000";
+                cur["rating"]=Math.floor(Math.random()*50)+51;
+                cur["discription"]="doctor has been served in hospital for over 20 years.....";
+                doctors.push(cur);
+            }
+            const body = document.getElementById('doctors');
+            body.innerHTML = JSON.stringify(doctors);
+        };
+        </script>
+    </head>
+<body onload="generate_doctors()">
+    <div id="doctors"></div>
+</body>
+
+</html>

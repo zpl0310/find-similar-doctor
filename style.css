@@ -1,0 +1,136 @@
+
+*{
+  box-sizing: border-box;
+}
+
+header{
+    background: #464647;
+    padding: 20px;
+    color: aliceblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.searchBar{
+    background-color: darkgrey;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    list-style: none;
+    text-align: center;
+}
+
+.searchCriteria{
+    position: relative;
+    left:25%;
+}
+
+.searchCriteria >li > span{
+    float: left;
+    font-size:16px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    width:8%;
+    margin-right: 10px; 
+    border: 2px solid rgb(239, 240, 179);
+    border-radius: 10px;
+}
+
+.searchCriteria >li > span:hover{
+    cursor: pointer;
+    background: rgb(239, 240, 179);
+}
+
+#input{
+    position: relative;
+}
+
+.table-div{
+    justify-content: center;
+    font-size:18px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-top: 15px;
+    color:#514d4a;
+}
+.doctors{
+    margin: 0 auto;  
+}
+
+.row-data  {
+    line-height: 45px;
+    text-align: center;
+}
+
+.row-data > th{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: normal;
+    font-size: 20px;    
+}
+
+a {
+    color: #554141;
+}
+.container{
+    padding:15px 0;
+    background: #ced6e2;
+}
+
+#details{
+    position: relative;
+    left:24%;
+    width: 45%;
+    font-family:  Arial, Helvetica, sans-serif; 
+    font-size: 20px;
+    color:#514d4a;
+    
+}
+
+#details >div{
+    padding-bottom: 15px;
+}
+
+h4{
+    font-family:  Arial, Helvetica, sans-serif; 
+    font-size: 18px;
+    text-align: left;
+    font-weight: normal;
+    color:#514d4a;
+}
+
+.recs{
+    text-align: justify;
+}
+
+.recdoc{
+    list-style: none;
+    width:23%;
+    height: 30px;
+    margin: 10px 10px;
+    float: left;
+    border: 4px solid  #ced6e2;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.recdoc:hover{
+    background: #ced6e2;
+}
+
+.dummy{
+    clear: both;
+}
+
+.goback{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.glow{
+  border: 4px solid black;
+  box-shadow: 0 0 10px black;
+  background: rgb(239, 240, 179);
+}

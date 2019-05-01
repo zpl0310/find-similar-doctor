@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Find Similar Doctor</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./doctors.js"></script>
+  </head>
+  <body> 
+    <header>
+      <h1>Find Similar Doctor</h1>
+      <h2>select a search criteria, then type in the info you are looking for</h2>
+    </header>
+    <div class="searchBar">
+        <div class="searchCriteria" id="searchCriteria">
+            <li><span id="name">Name</span></li>
+            <li><span id="specialty">Specialty</span></li>
+            <li><span id="city">City</span></li>
+            <li><span id="rating">Rating</span></li>
+        </div>
+        <input type="text" name="search" id="input" placeholder="search">
+    </div>
+
+    <div class="table-div">
+        <table class="doctors">
+            <thead>
+                <tr class="row-data">
+                    <!-- <th>ID</th> -->
+                    <th>Name</th>
+                    <th >Address</th>
+                    <th >Specialty</th>
+                    <th >City</th>
+                    <th >Rating</th>
+                    <th>More Info</th>
+                </tr>
+            </thead>
+            <tbody id ="doctors-data">
+
+            </tbody>
+        </table>
+    </div>
+
+
+      <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
